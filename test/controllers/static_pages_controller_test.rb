@@ -26,7 +26,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "Contact | Ruby on Rails Tutorial Sample App"
   end
 
-  test do 
+  test "email should be present" do
     get signup_path
     assert_response :success
   end
